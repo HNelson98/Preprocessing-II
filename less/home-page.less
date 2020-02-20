@@ -1,3 +1,30 @@
+header{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+ 
+
+  img{
+    width: 63%;
+    align-self: center;
+  }
+  h2{
+    width: 63%;
+    padding-bottom: 2%;
+    align-self: center;
+  }
+  p{
+    width: 63%;
+    align-self: center;
+    padding-bottom: 2%;
+    border-bottom:2px dashed @navigation-border;
+  }
+}
+
+
+
 .home {
 
   .content-section {
@@ -5,6 +32,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+  @media @mobile{
+      flex-direction: column;
+      flex-wrap: no-wrap;
+      width: 80%;
+      background-color: red;
+      display: none;
+
+    }
 
    
     
@@ -57,5 +93,10 @@
       width: 30%;
       margin-bottom: 30px;
     }
+
+    .btn{
+      .custom-btn(5vh, 54%, 7%)
+    }
+
   }
 }// home
